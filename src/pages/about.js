@@ -22,6 +22,9 @@ function About() {
         <p>
          The project was inspired by the idea of creating a simple and modern React application that helps users practice real-world web development skills.
         </p>
+        <p>
+          This project was developed by Adam Frijeh, Fall 2025–2026.
+        </p>
         <button onClick={() => navigate("/")}>Go Back</button>
       </div>
     </div>

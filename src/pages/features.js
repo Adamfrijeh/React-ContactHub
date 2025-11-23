@@ -1,26 +1,43 @@
+import { FaUsers, FaPhoneAlt, FaHistory, FaMobileAlt } from "react-icons/fa";
+
 function Features() {
+  const features = [
+    {
+      icon: <FaUsers />,
+      title: "Live Contact Data",
+      desc: "Fetches real users from an online API and displays them instantly.",
+    },
+    {
+      icon: <FaPhoneAlt />,
+      title: "Interactive Calling",
+      desc: "Simulate a real call with loading effects and a call-ending option.",
+    },
+    {
+      icon: <FaHistory />,
+      title: "Last Called Memory",
+      desc: "Automatically remembers your last called user using React Context.",
+    },
+    {
+      icon: <FaMobileAlt />,
+      title: "Responsive Layout",
+      desc: "Beautiful design that adapts smoothly to all screen sizes.",
+    },
+  ];
+
   return (
     <div className="home_container">
       <div className="home_content">
         <h2>Website Features</h2>
-        <ul className="features_list">
-          <li>
-            <strong>Live contact data:</strong> we fetch demo users from an
-            online API and display them as clean cards.
-          </li>
-          <li>
-            <strong>Interactive calling:</strong> simulate calling a user with a
-            loading animation and an option to end the call.
-          </li>
-          <li>
-            <strong>Last called memory:</strong> the home page reminds you who
-            you called last using global React Context.
-          </li>
-          <li>
-            <strong>Responsive layout:</strong> cards and pages adapt for both
-            desktop and mobile screens.
-          </li>
-        </ul>
+
+        <div className="features_dynamic_grid">
+          {features.map((item, index) => (
+            <div key={index} className="feature_card_dynamic">
+              <div className="feature_icon_dynamic">{item.icon}</div>
+              <h3>{item.title}</h3>
+              <p>{item.desc}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
