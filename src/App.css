@@ -1,13 +1,48 @@
+
 .navbar {
-  width: 100%;
-  background: linear-gradient(90deg, #0077cc, #00c896);
-  color: white;
-  padding: 10px 40px;
+  position: fixed;          
+  top: 0;
+  left: 0;
+  width: 100vw;            
+  padding: 12px 40px;
+  z-index: 999;            
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-sizing: border-box;
+  background: linear-gradient(90deg, #0077cc, #00c896);
+  color: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+.back_button_wrapper {
+  width: 100%;
+  padding: 20px 40px 0; /* small top space */
+  box-sizing: border-box;
+}
+
+.back_button {
+  background: linear-gradient(90deg, #9b5cff, #ff6b9c);
+  padding: 10px 18px;
+  border-radius: 25px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.contacts_container {
+  margin-top: 0 !important; /* remove gap */
+}
+
+.contacts_cards {
+  padding-top: 10px !important; /* tighten spacing */
+}
+
+
+body {
+  margin: 0;
+  padding-top: 70px;
 }
 
 .navbar_logo {

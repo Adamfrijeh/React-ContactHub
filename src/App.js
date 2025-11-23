@@ -1,5 +1,5 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
+import Navbar from "./pages/Navbar";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import Contacts from "./pages/contacts";
@@ -11,8 +11,8 @@ import Features from "./pages/features";
 
 function App() {
   const [lastCalledUser, setLastCalledUser] = useState(undefined);
-
   const storeLastCalledUser = (user) => setLastCalledUser(user);
+
   return (
     <MainContext.Provider value={{ lastCalledUser, storeLastCalledUser }}>
       <Navbar />
@@ -25,6 +25,5 @@ function App() {
     </MainContext.Provider>
   );
 }
-
 
 export default App;

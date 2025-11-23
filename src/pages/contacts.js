@@ -19,13 +19,16 @@ function Contacts() {
     getData();
   }, []);
 
-  return (
-    
+return (
+  <>
+    {/* BACK BUTTON OUTSIDE */}
+    <div className="back_button_wrapper">
+      <Link to="/" className="back_button">← Back to Home</Link>
+    </div>
+
+    {/* CONTACTS CONTAINER */}
     <div className="contacts_container">
       <div className="contacts_cards">
-        <div className="contacts_topbar">
-          <Link to="/" className="back_button">← Back to Home</Link>
-        </div>
         {loading ? (
           <p>Data is loading</p>
         ) : (
@@ -43,7 +46,10 @@ function Contacts() {
         )}
       </div>
     </div>
-  );
+  </>
+);
+
+
 }
 
 export default Contacts;

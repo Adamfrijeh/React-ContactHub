@@ -13,6 +13,7 @@ function Navbar() {
         >
           Home
         </NavLink>
+
         <NavLink
           to="/contacts"
           className={({ isActive }) =>
@@ -21,6 +22,7 @@ function Navbar() {
         >
           Contacts
         </NavLink>
+
         <NavLink
           to="/features"
           className={({ isActive }) =>
@@ -29,6 +31,7 @@ function Navbar() {
         >
           Features
         </NavLink>
+
         <NavLink
           to="/about"
           className={({ isActive }) =>
