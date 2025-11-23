@@ -17,9 +17,14 @@
 
 .back_button_wrapper {
   width: 100%;
-  padding: 20px 40px 0; /* small top space */
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 60px 10px; 
   box-sizing: border-box;
+  margin-top: 60px; 
 }
+
+
 
 .back_button {
   background: linear-gradient(90deg, #9b5cff, #ff6b9c);
@@ -32,11 +37,11 @@
 }
 
 .contacts_container {
-  margin-top: 0 !important; /* remove gap */
+  margin-top: 0 !important; 
 }
 
 .contacts_cards {
-  padding-top: 10px !important; /* tighten spacing */
+  padding-top: 10px !important; 
 }
 
 

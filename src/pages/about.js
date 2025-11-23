@@ -20,8 +20,7 @@ function About() {
           <strong>last called user</strong>, which appears on the home page.
         </p>
         <p>
-          The project was inspired by Devrabic, an Arabic community that helps
-          students learn modern web development step by step.
+         The project was inspired by the idea of creating a simple and modern React application that helps users practice real-world web development skills.
         </p>
         <button onClick={() => navigate("/")}>Go Back</button>
       </div>

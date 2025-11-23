@@ -21,12 +21,9 @@ function Contacts() {
 
 return (
   <>
-    {/* BACK BUTTON OUTSIDE */}
     <div className="back_button_wrapper">
       <Link to="/" className="back_button">← Back to Home</Link>
     </div>
-
-    {/* CONTACTS CONTAINER */}
     <div className="contacts_container">
       <div className="contacts_cards">
         {loading ? (
