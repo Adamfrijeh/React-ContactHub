@@ -1,3 +1,63 @@
+.navbar {
+  width: 100%;
+  background: linear-gradient(90deg, #0077cc, #00c896);
+  color: white;
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar_logo {
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 0.5px;
+}
+
+.navbar_links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.nav_link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: background-color 0.2s ease, transform 0.1s ease,
+    color 0.2s ease;
+  font-size: 15px;
+}
+
+.nav_link:hover {
+  background-color: rgba(255, 255, 255, 0.18);
+  transform: translateY(-1px);
+}
+
+.nav_link-active {
+  background-color: white;
+  color: #0077cc;
+}
+
+.features_list {
+  margin-top: 15px;
+  text-align: left;
+  max-width: 600px;
+}
+
+.features_list li {
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+
+
+
+
 
 .contacts_container,
 .home_container {

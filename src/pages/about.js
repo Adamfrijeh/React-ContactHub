@@ -5,8 +5,23 @@ function About() {
   return (
     <div className="home_container">
       <div className="home_content">
+        <h2>About This Website</h2>
         <p>
-          This webiste is developed by Houzayfa Ayouby. CSCI 492 Fall 2025-2026.
+          This demo contact website is built with React and React Router. It
+          displays a list of demo users and lets you interact with them in a
+          simple way.
+        </p>
+        <p>
+          Contacts are loaded from an online API, then shown as clean cards with
+          name, email, full address and location coordinates.
+        </p>
+        <p>
+          You can simulate calling any user, and the app remembers the{" "}
+          <strong>last called user</strong>, which appears on the home page.
+        </p>
+        <p>
+          The project was inspired by Devrabic, an Arabic community that helps
+          students learn modern web development step by step.
         </p>
         <button onClick={() => navigate("/")}>Go Back</button>
       </div>
